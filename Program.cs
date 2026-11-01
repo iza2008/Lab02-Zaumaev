@@ -34,7 +34,27 @@ Console.WriteLine();
 Console.WriteLine("decimal против double");
 
 double priceDouble = 0.1 + 0.2;
-decimal priceDemical = 0.1m + 0.2m;
+decimal priceDecimal = 0.1m + 0.2m;
 
 Console.WriteLine($"double:  0.1 + 0.2 = {priceDouble}");
-Console.WriteLine($"decimal: 0.1 + 0.2 = {priceDemical}");
+Console.WriteLine($"decimal: 0.1 + 0.2 = {priceDecimal}");
+
+Console.WriteLine();
+Console.WriteLine("var");
+
+var studentAge = 20;
+var gpa = 4.75;
+var fullName = "Заумаев И.У";
+
+Console.WriteLine($"{fullName}, Возраст {studentAge}, средний балл {gpa}");
+
+// Console.WriteLine();
+// Console.WriteLine("Ввод текста");
+
+// Console.Write("Введите ваше имя ");
+// string enteredName = Console.ReadLine();
+
+// Console.Write("Введите название вашей группы: ");
+// string enteredGroup = Console.ReadLine();
+
+// Console.WriteLine($"Здравствуйте, {enteredName} из группы {enteredGroup}!");
