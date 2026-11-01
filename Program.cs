@@ -48,13 +48,13 @@ var fullName = "Заумаев И.У";
 
 Console.WriteLine($"{fullName}, Возраст {studentAge}, средний балл {gpa}");
 
-// Console.WriteLine();
-// Console.WriteLine("Ввод текста");
+Console.WriteLine();
+Console.WriteLine("Ввод текста");
 
-// Console.Write("Введите ваше имя ");
-// string enteredName = Console.ReadLine();
+Console.Write("Введите ваше имя ");
+string enteredName = Console.ReadLine();
 
-// Console.Write("Введите название вашей группы: ");
-// string enteredGroup = Console.ReadLine();
+Console.Write("Введите название вашей группы: ");
+string enteredGroup = Console.ReadLine();
 
-// Console.WriteLine($"Здравствуйте, {enteredName} из группы {enteredGroup}!");
+Console.WriteLine($"Здравствуйте, {enteredName} из группы {enteredGroup}!");
