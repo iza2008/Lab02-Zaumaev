@@ -75,10 +75,49 @@ Console.WriteLine($"{fullName}, Возраст {studentAge}, средний ба
 Console.WriteLine();
 Console.WriteLine("Преобразование через TryParse");
 
-Console.Write("ВВедите количество прочитанных книг за семестр ");
-string booksInput = Console.ReadLine();
+Console.Write("Введите количество прочитанных книг за семестр ");
+string booksInput = Console.ReadLine()??"";
 
 bool wasSuccessful = int.TryParse(booksInput, out int booksCount);
 
 Console.WriteLine($"Удалось преобразовать: {wasSuccessful}");
 Console.WriteLine($"Значение переменной booksCount: {booksCount}");
+
+Console.WriteLine();
+Console.WriteLine("Анкета студента");
+
+Console.Write("Введите имя и фамилию ");
+string surveyFullName = Console.ReadLine()??"";
+
+Console.Write("Введите название группы ");
+string GroupName = Console.ReadLine()??"";
+
+Console.Write("Введите ваш год рождения ");
+string surveyBirthYear = Console.ReadLine()??"";
+
+int surveyBirthYearParse = int.Parse(surveyBirthYear);
+
+Console.Write("Введите средний балл за прошлый семестр: ");
+double surveyAverageGrade = double.Parse(Console.ReadLine() ?? "");
+
+Console.Write("Введите любимую букву: ");
+string surveyLetterText = Console.ReadLine() ?? "";
+char surveyFavoriteLetter = surveyLetterText[0];
+
+Console.WriteLine("Сколько лет исполнится студенту в 2030 году.?");
+
+int surveyAgeIn2030 = 2030 - surveyBirthYearParse;
+Console.WriteLine($"В 2030 году студенту будет: {surveyAgeIn2030}");
+
+bool surveyGoodGrade = surveyAverageGrade >= 4.0;
+
+
+Console.WriteLine();
+Console.WriteLine("СВОДКА");
+Console.WriteLine($"Имя и фамилия: {surveyFullName}");
+Console.WriteLine($"Группа: {GroupName}");
+Console.WriteLine($"Год рождения: {surveyBirthYearParse}");
+Console.WriteLine($"Средний балл: {surveyAverageGrade}");
+Console.WriteLine($"Любимая буква: {surveyFavoriteLetter}");
+Console.WriteLine($"В 2030 году исполнится лет: {surveyAgeIn2030}");
+Console.WriteLine($"Средний балл не ниже 4.0: {surveyGoodGrade}");
