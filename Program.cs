@@ -72,15 +72,28 @@ Console.WriteLine($"{fullName}, Возраст {studentAge}, средний ба
 // Console.WriteLine($"int.Parse:       {birthYearParse}");
 // Console.WriteLine($"В 2030 году вам будет: {2030 - birthYearConvert} лет");
 
+// Console.WriteLine();
+// Console.WriteLine("Калькулятор ИМТ");
+
+// Console.Write("Введите рост в метрах, например 1,75: ");
+// double bmiHeight = double.Parse(Console.ReadLine() ?? "");
+
+// Console.Write("Введите вес в килограммах: ");
+// double bmiWeight = double.Parse(Console.ReadLine() ?? "");
+
+// double bmiResult = bmiWeight / (bmiHeight * bmiHeight);
+
+// Console.WriteLine($"ИМТ: {bmiResult:F2}");
+
 Console.WriteLine();
-Console.WriteLine("Калькулятор ИМТ");
+Console.WriteLine("Инициалы");
 
-Console.Write("Введите рост в метрах, например 1,75: ");
-double bmiHeight = double.Parse(Console.ReadLine() ?? "");
+Console.Write("Введите фамилию: ");
+string initialsSurname = Console.ReadLine() ?? "";
 
-Console.Write("Введите вес в килограммах: ");
-double bmiWeight = double.Parse(Console.ReadLine() ?? "");
+Console.Write("Введите имя: ");
+string initialsName = Console.ReadLine() ?? "";
 
-double bmiResult = bmiWeight / (bmiHeight * bmiHeight);
+char initialsFirstLetter = initialsName[0];
 
-Console.WriteLine($"ИМТ: {bmiResult:F2}");
+Console.WriteLine($"{initialsSurname} {initialsFirstLetter}.");
